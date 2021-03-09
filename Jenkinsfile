@@ -21,7 +21,6 @@ pipeline {
                     
                     echo " ============== docker build =================="
                     sh '''
-                    mvn clean package
                     docker build -t voopnok/oms-db:latest . 
                     '''
                     
